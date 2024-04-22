@@ -1,0 +1,89 @@
+body{
+    background-color: rgb(46, 153, 179);
+    margin: 0;
+}
+h1{
+    font-size: 75px;
+    font-family: sans-serif;
+    text-shadow: 4px 4px 3px rgba(0,0,0,0.5);
+    margin-bottom: 10px;
+}
+h2{
+
+}
+#titulosPrincipal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#divImgMC{
+    order: 2;
+    
+}
+#divH1{
+    order: 1;
+    text-align: center;
+    text-transform: uppercase;
+}
+#divH1 h3{
+    margin-top: 0%;
+}
+
+#menuBar{
+    background-color: black;
+    height: 100px;
+    width: 100%;
+    font-size: x-large;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+#Regiones{
+    margin-left: auto;
+    margin-right: 25px;
+    display: block;
+}
+#imgHome{
+    margin-left: 15px;
+}
+a{
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+#texto-Violeta{
+    color:rgb(94, 2, 88);
+}
+#contenedorCURuta {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.column {
+    flex: 1 1 20%;
+    margin-right: 1px;
+    text-align: center;
+}
+
+.pokemon-card {
+    background-color: white;
+    border-radius: 10%;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 90%;
+}
+
+.pokemon-card img {
+    max-width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
