@@ -15,19 +15,52 @@ h2{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url('../img/fondoPrincipalHD.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 500px; 
+    background-position: center;
+    background-repeat: no-repeat;
 }
-#divImgMC{
-    order: 2;
-    
-}
+
 #divH1{
-    order: 1;
-    text-align: center;
+    text-align: justify;
     text-transform: uppercase;
+    width: 90vh;
+    color: white;
 }
-#divH1 h3{
+
+#divH1 h1{
+    text-align: center;
     margin-top: 0%;
+    margin-left: 20%;
+    width: 100%;
 }
+
+#divH1 h2, h3{
+    margin-top: 0%;
+    margin-left: 20%;
+    margin-right: 5%;
+}
+
+#btnRegiones-Rutas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+}
+
+#btnRegiones-Rutas button{
+    width: 15rem;
+    height: 3rem;
+    margin-bottom: 20%;
+}
+
+#btnRegiones-Rutas button:last-child{
+    margin-bottom: 0;
+}
+
+
 
 #menuBar{
     background-color: black;
@@ -86,4 +119,8 @@ a{
     height: auto;
     display: block;
     margin: 0 auto;
+}
+
+#imagenHead{
+    height: 50px;
 }
