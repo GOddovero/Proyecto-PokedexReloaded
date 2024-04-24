@@ -2,102 +2,250 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0">
     <title>Pokedex Pkmn Reloaded</title>
     <link rel="stylesheet" href="styles/fonts.css">
     <link rel="stylesheet" href="styles/styles.css">
-
     <meta http-equiv="Expires" content="0">
     <meta http-equiv="Last-Modified" content="0">
-    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalclassate">
     <meta http-equiv="Pragma" content="no-cache">
 </head>
 <body>
-    <div id="principal">
-        <div id="menuBar">
-            <a id="imgHome" href="#titulosPrincipal"> <img src="img/home.png" alt=""></a>
-            <div id="Regiones">
+    <div class="principal">
+        <div class="menuBar">
+            <a class="imgHome" href="#titulosPrincipal"> <img src="img/home.png" alt=""></a>
+            <div class="desplazamientoMB">
                 <a href="#divRutas" onclick="miFuncion('Rutas')">Rutas</a>
                 <a href="#divRegiones" onclick="miFuncion('Regiones')">Regiones</a>
+                <a href="#tituloUbicacionStarters" onclick="miFuncion('Starters')">Starters</a>
             </div>
         </div>
-        <div id="titulosPrincipal">
-            <div id="divH1">
+        <div class="titulosPrincipal">
+            <div class="divH1">
                 <h1>Pokedex <br>
                     Pokemon 
-                    <span id="texto-Violeta">
+                    <span class="texto-Violeta">
                         Reloaded
                     </span>
                 </h1>
                 <h2>¡Captura todos los pokemones disponibles en Pokemon Reloaded!</h2>
             </div>
         </div>
-        <div id="divH3">
-            <h3>¡Arriba encontrarás el listado de pokemon dividido por regiones y tambien puedes acceder
+        <div class="divH3">
+            <h3>¡Arriba encontrarás el listado de pokemon divclassclasso por regiones y tambien puedes acceder
                 a la opcion de ver los pokemones por rutas!
             </h3>
-            <h4><span id="subrayado">Una pequeña aclaracion</span>: Los datos expuestos en la pagina estan directamente relacionados con mi partida de pokemon reloaded, por eso no esta el 100% de la pokedex cargada,
-                 al momento de capturar nuevos pokemones se ira actualizando la pagina, los datos actuales los puedes ver reflejados en el siguiente grafico.</h4>
         </div>
-        <div id="contenedorIconosRegiones">
-            <div id="TarjetaRegion">
+        <div class="contenedorIconosRegiones">
+            <div class="TarjetaRegion">
                 <img src="img/pkmn/1.gif">
-                <p id="tituloRegion">KANTO</p>
-                <p id="cantidadPokes">151/151</p>
+                <p class="tituloRegion">KANTO</p>
+                <p class="cantclassadPokes">109/151</p>
             </div>
-            <div id="TarjetaRegion">
+            <div class="TarjetaRegion">
                 <img src="img/pkmn/152.gif">
-                <p id="tituloRegion">JHOTO</p>
-                <p id="cantidadPokes">100/100</p>
+                <p class="tituloRegion">JHOTO</p>
+                <p class="cantclassadPokes">59/100</p>
             </div>
-            <div id="TarjetaRegion">
+            <div class="TarjetaRegion">
                 <img src="img/pkmn/252.gif">
-                <p id="tituloRegion">HOENN</p>
-                <p id="cantidadPokes">135/135</p>
+                <p class="tituloRegion">HOENN</p>
+                <p class="cantclassadPokes">93/135</p>
             </div>
-            <div id="TarjetaRegion">
+            <div class="TarjetaRegion">
                 <img src="img/pkmn/387.gif">
-                <p id="tituloRegion">SINNOH</p>
-                <p id="cantidadPokes">108/108</p>
+                <p class="tituloRegion">SINNOH</p>
+                <p class="cantclassadPokes">51/108</p>
             </div>
-            <div id="TarjetaRegion">
+            <div class="TarjetaRegion">
                 <img src="img/pkmn/518.gif">
-                <p id="tituloRegion">UNOVA</p>
-                <p id="cantidadPokes">155/155</p>
+                <p class="tituloRegion">TESELIA</p>
+                <p class="cantclassadPokes">78/155</p>
             </div>
-            <div id="TarjetaRegion">
+            <div class="TarjetaRegion">
                 <img src="img/pkmn/745.gif">
-                <p id="tituloRegion">KALOS</p>
-                <p id="cantidadPokes">72/72</p>
+                <p class="tituloRegion">KALOS</p>
+                <p class="cantclassadPokes">38/72</p>
             </div>
-            <div id="TarjetaRegion">
+            <div class="TarjetaRegion">
                 <img src="img/pkmn/901.gif">
-                <p id="tituloRegion">ALOLA</p>
-                <p id="cantidadPokes">89/89</p>
+                <p class="tituloRegion">ALOLA</p>
+                <p class="cantclassadPokes">37/89</p>
             </div>
-            <div id="TarjetaRegion">
+            <div class="TarjetaRegion">
                 <img src="img/pkmn/2067.gif">
-                <p id="tituloRegion">GALAR</p>
-                <p id="cantidadPokes">80/80</p>
+                <p class="tituloRegion">GALAR</p>
+                <p class="cantclassadPokes">55/89</p>
             </div>
-            <div id="TarjetaRegion">
+            <div class="TarjetaRegion">
                 <img src="img/pkmn/2284.gif">
-                <p id="tituloRegion">PALDEA</p>
-                <p id="noEsta">No esta agregada actualmente</p>
-                <p id="cantidadPokes">0/105</p>
+                <p class="tituloRegion">HISUI</p>
+                <p class="cantclassadPokes">4/5</p>
 
             </div>
-            <div id="TarjetaRegion">
+            <div class="TarjetaRegion">
                 <img src="img/pkmn/495.gif">
-                <p id="tituloRegion">STAR</p>
-                <p id="cantidadPokes">85/85</p>
+                <p class="tituloRegion">STAR</p>
+                <p class="cantclassadPokes">85/85</p>
             </div>
         </div>
-        <div id="imgMapaStar">
-            <p id="TituloMapa">REGION STAR</p>
-            <img src="img/MapaRegionStar.png">
+        <div class="divH3">
+            <h4><span class="subrayado">Una pequeña aclaracion</span>: Los datos expuestos en la pagina estan directamente relacionados con mi partclassa de pokemon reloaded, por eso no esta el 100% de la pokedex cargada,
+                al momento de capturar nuevos pokemones se ira actualizando la pagina, los datos actuales los puedes ver reflejados en el siguiente grafico.</h4>
         </div>
-<div id="divRegiones">
+
+        <div class="imgMapas">
+            <p class="TituloMapaStar">REGION STAR</p>
+            <img src="img/mapas/MapaRegionStar.png" class="imgMRS">
+            <div class="mapasSecundarios">
+                <div>
+                    <p class="TituloMapa">FRENTE <br>BATALLA</p>
+                    <img src="img/mapas/MapaFrente.png" class="imgMFB">
+                    
+                </div>
+                <div>
+                    <p class="TituloMapa">LA JUNGLA</p>
+                    <img src="img/mapas/MapaJungla.png" class="imgMJ">
+                    
+                </div>
+                <div>
+                    <p class="TituloMapa">ARCHIPIÉLAGO <br>SOLAR</p>
+                    <img src="img/mapas/MapaArchipielago.png" class="imgMA">
+                    
+                </div>
+            </div>
+
+        </div>
+<div class="divStarters">
+    <div id="tituloUbicacionStarters"></div>
+    <h2>Ubicacion de los Starters</h2>
+    <div class="contenedorStarters">
+        <div class="TarjetaStarters">
+            <img src="img/pkmn/0.gif">
+            <p class="ubicacionStarters">Lab. Oak</p> 
+        </div>
+        <div class="TarjetaStarters">
+            <img src="img/pkmn/0.gif">
+            <p class="ubicacionStarters">Ruta 2</p> 
+        </div>
+        <div class="TarjetaStarters">
+            <img src="img/pkmn/0.gif">
+            <p class="ubicacionStarters">Ruta 5</p> 
+        </div>
+        <div class="TarjetaStarters">
+            <img src="img/pkmn/0.gif">
+            <p class="ubicacionStarters">Ruta 6</p> 
+        </div>
+        <div class="TarjetaStarters">
+            <img src="img/pkmn/0.gif">
+            <p class="ubicacionStarters">Ruta 8</p> 
+        </div>
+        <div class="TarjetaStarters">
+            <img src="img/pkmn/0.gif">
+            <p class="ubicacionStarters">Cementerio Can</p> 
+        </div>
+        <div class="TarjetaStarters">
+            <img src="img/pkmn/0.gif">
+            <p class="ubicacionStarters">Ruta 13</p> 
+        </div>
+        <div class="TarjetaStarters">
+            <img src="img/pkmn/0.gif">
+            <p class="ubicacionStarters">Ruta 18</p> 
+        </div>
+        <div class="TarjetaStarters">
+            <img src="img/pkmn/0.gif">
+            <p class="ubicacionStarters">Zona Volcanica</p> 
+        </div>
+        <div class="TarjetaStarters">
+            <img src="img/pkmn/0.gif">
+            <p class="ubicacionStarters">Cloaca Polar</p> 
+        </div>
+        <div class="TarjetaStarters">
+            <img src="img/pkmn/0.gif">
+            <p class="ubicacionStarters">Ruta 19</p> 
+        </div>
+        <div class="TarjetaStarters">
+            <img src="img/pkmn/0.gif">
+            <p class="ubicacionStarters">Ruta 21</p> 
+        </div>
+        <div class="TarjetaStarters">
+            <img src="img/pkmn/0.gif">
+            <p class="ubicacionStarters">Ruta 22</p> 
+        </div>
+        <div class="TarjetaStarters">
+            <img src="img/pkmn/0.gif">
+            <p class="ubicacionStarters">Ruta 24</p> 
+        </div>
+        <div class="TarjetaStarters">
+            <img src="img/pkmn/0.gif">
+            <p class="ubicacionStarters">Isla Sol</p> 
+        </div>
+        <div class="TarjetaStarters">
+            <img src="img/pkmn/0.gif">
+            <p class="ubicacionStarters">Ruta 16</p> 
+        </div>
+        <div class="TarjetaStarters">
+            <img src="img/pkmn/0.gif">
+            <p class="ubicacionStarters">Barco</p> 
+        </div>
+        <div class="TarjetaStarters">
+            <img src="img/pkmn/0.gif">
+            <p class="ubicacionStarters">Ruta 26</p> 
+        </div>
+        <div class="TarjetaStarters">
+            <img src="img/pkmn/0.gif">
+            <p class="ubicacionStarters">Ruta 28</p> 
+        </div>
+        <div class="TarjetaStarters">
+            <img src="img/pkmn/0.gif">
+            <p class="ubicacionStarters">Ruta 29</p> 
+        </div>
+        <div class="TarjetaStarters">
+            <img src="img/pkmn/0.gif">
+            <p class="ubicacionStarters">Ruta 32</p> 
+        </div>
+        <div class="TarjetaStarters">
+            <img src="img/pkmn/0.gif">
+            <p class="ubicacionStarters">Ruta 34</p> 
+        </div>
+        <div class="TarjetaStarters">
+            <img src="img/pkmn/0.gif">
+            <p class="ubicacionStarters">Isla Terra</p> 
+        </div>
+        <div class="TarjetaStarters">
+            <img src="img/pkmn/0.gif">
+            <p class="ubicacionStarters">Ruta 20</p> 
+        </div>
+        <div class="TarjetaStarters">
+            <img src="img/pkmn/0.gif">
+            <p class="ubicacionStarters">Lab. Jungla</p> 
+        </div>
+        <div class="TarjetaStarters">
+            <img src="img/pkmn/0.gif">
+            <p class="ubicacionStarters">Isla Venus</p> 
+        </div>
+        <div class="TarjetaStarters">
+            <img src="img/pkmn/0.gif">
+            <p class="ubicacionStarters">Isla Urano</p> 
+        </div>
+        <div class="TarjetaStarters">
+            <img src="img/pkmn/0.gif">
+            <p class="ubicacionStarters">Ruta 10</p> 
+        </div>
+        <div class="TarjetaStarters">
+            <img src="img/pkmn/0.gif">
+            <p class="ubicacionStarters">Ruta 30</p> 
+        </div>
+        <div class="TarjetaStarters">
+            <img src="img/pkmn/0.gif">
+            <p class="ubicacionStarters">Ruta 3</p> 
+        </div>
+    </div>
+
+</div>
+<div class="divRegiones">
 </div>    
+<script src="components/script.js"></script>
 </body>
 </html>

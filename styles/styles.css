@@ -8,9 +8,9 @@ h1{
     margin-bottom: 10px;
     
 }
-#titulosPrincipal {
+.titulosPrincipal {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     background-image: linear-gradient(to top, rgba(46, 153, 179, 1), rgba(46, 153, 179, 0)), linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url('../img/fondoPrincipalHD.jpg');
     background-size: cover;
@@ -21,33 +21,32 @@ h1{
 }
 
 
-#divH1 {
-    text-align: justify;
+.divH1 {
+    text-align: center;
     text-transform: uppercase;
     color: white;
-    margin-left: 5%;
 }
 
-#divH1 h1 {
-    text-align: left;
+.divH1 h1 {
+    text-align: center;
     margin-top: 0%;
     width: 100%;
     font-family: 'Roboto Mono', monospace;
     font-size: 10vh;
 }
-#divH3 h3{
+.divH3 h3{
     text-align: center;
     font-family: 'Roboto Mono', monospace;
     color: white;
 }
-#divH3 h4{
+.divH3 h4{
     text-align: center;
     font-family: 'Roboto Mono', monospace;
     color: white;
     margin-left: 15%;
     margin-right: 15%;
 }
-#divH1 h2{
+.divH1 h2{
     margin-top: 0%;
     margin-right: 5%;
     width: 100%;
@@ -58,7 +57,8 @@ h1{
     font-style: italic;
 }
 
-#menuBar{
+.menuBar{
+    position: fixed;
     background-color: black;
     height: 100px;
     width: 100%;
@@ -68,12 +68,14 @@ h1{
     align-items: center;
 }
 
-#Regiones{
+.desplazamientoMB{
     margin-left: auto;
     margin-right: 25px;
     display: block;
+    font-family: "Dosis", sans-serif;
+    font-weight: 600;
 }
-#imgHome{
+.imgHome{
     margin-left: 15px;
 }
 a{
@@ -81,16 +83,16 @@ a{
     text-decoration: none;
     margin-left: 20px;
 }
-#texto-Violeta{
+.texto-Violeta{
     color:rgb(94, 2, 88);
 }
-#subrayado{
+.subrayado{
     text-decoration: underline;
 }
-#imagenHead{
+.imagenHead{
     height: 50px;
 }
-#contenedorIconosRegiones{
+.contenedorIconosRegiones{
     display: grid;
     grid-template-columns: auto auto auto auto auto;
     height: 100%;
@@ -101,7 +103,7 @@ a{
     row-gap: 50px;
 
 }
-#TarjetaRegion {
+.TarjetaRegion {
     background-color: white;
     border-radius: 10%;
     display: flex;
@@ -110,34 +112,108 @@ a{
     align-items: center;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);
 }
-#TarjetaRegion p{
+.TarjetaRegion p{
     text-align: center;
     font-family: 'Roboto Mono', monospace;
     margin: 0;
 }
-#TarjetaRegion img{
+.TarjetaRegion img{
     height: 12.5vh;
+    background-color: rgb(46, 153, 179);
+    border-radius: 10%;
+    margin-top: 15px;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.9);
 }
-#TarjetaRegion #tituloRegion{
+.TarjetaRegion .tituloRegion{
     font-size: 5vh;
     margin-top: 1vh;
+    text-shadow: 5px 2px 25px rgb(46, 153, 179);
 }
-#TarjetaRegion #cantidadPokes{
+.TarjetaRegion .cantidadPokes{
     font-size: 2.5vh;
     margin-bottom: 5%;
 }
-#TarjetaRegion #noEsta{
-    font-size: 1vh;
+.TarjetaRegion .noEsta{
+    width: auto;
     color: red;
 }
-#imgMapaStar{
+.imgMapas{
     margin-top: 3vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-#TituloMapa{
+.TituloMapa{
     font-family: 'Roboto Mono', monospace;
     font-size: 5vh;
+    color: white;
+    text-align: center;
+    text-shadow: 5px 5px 5px black;
+}
+.TituloMapaStar{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 10vh;
+    color: white;
+    text-align: center;
+    text-shadow: 5px 5px 5px black;
+    margin-bottom: 0;
+}
+
+.mapasSecundarios{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    text-align: center;
+}
+.mapasSecundarios img{
+    margin-top: 0;
+    width: 300px;
+    height: auto;
+}
+.mapasSecundarios > div{
+    margin: 0 10vh;
+}
+.contenedorStarters{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    height: 100%;
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 1%;
+    column-gap: 25px;
+    row-gap: 50px;
+    margin-bottom: 5vh;
+}
+
+.TarjetaStarters{
+    background-color: white;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+    height: 21vh; 
+    width: 20vh; 
+}
+.TarjetaStarters img{
+    background-color: rgb(46, 153, 179);
+    border-radius: 10%;
+    margin-top: 15px;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.9);
+}
+.divStarters h2{
+    margin-top: 10%;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 7vh;
+    color: white;
+    text-align: center;
+    text-shadow: 5px 5px 5px black;
+    margin-bottom: 0;
+    text-transform: uppercase;
 }
