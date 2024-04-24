@@ -12,7 +12,7 @@ h1{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url('../img/fondoPrincipalHD.jpg');
+    background-image: linear-gradient(to top, rgba(46, 153, 179, 1), rgba(46, 153, 179, 0)), linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url('../img/fondoPrincipalHD.jpg');
     background-size: cover;
     width: 100%;
     height: 500px;
@@ -20,33 +20,42 @@ h1{
     background-repeat: no-repeat;
 }
 
+
 #divH1 {
     text-align: justify;
     text-transform: uppercase;
     color: white;
-    margin-left: 10%;
+    margin-left: 5%;
 }
 
 #divH1 h1 {
-    text-align: center;
+    text-align: left;
     margin-top: 0%;
-    width: 50%;
+    width: 100%;
     font-family: 'Roboto Mono', monospace;
-
-
+    font-size: 10vh;
 }
-
-#divH1 h2, #divH1 h3 {
-    margin-top: 0%;
-    margin-right: 5%;
-    width: 50%;
+#divH3 h3{
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+}
+#divH3 h4{
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 #divH1 h2{
+    margin-top: 0%;
+    margin-right: 5%;
+    width: 100%;
+    font-size: 2.5vh;
     text-align: center;
     font-family: 'Roboto Mono', monospace;
     font-weight: 400;
     font-style: italic;
-    font-size: 2vh;
 }
 
 #menuBar{
@@ -75,39 +84,9 @@ a{
 #texto-Violeta{
     color:rgb(94, 2, 88);
 }
-#contenedorCURuta {
-    max-width: 90%;
-    margin: 0 auto;
+#subrayado{
+    text-decoration: underline;
 }
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 20px;
-}
-
-.column {
-    flex: 1 1 20%;
-    margin-right: 1px;
-    text-align: center;
-}
-
-.pokemon-card {
-    background-color: white;
-    border-radius: 10%;
-    padding: 10px;
-    margin-bottom: 10px;
-    width: 90%;
-}
-
-.pokemon-card img {
-    max-width: 100px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
 #imagenHead{
     height: 50px;
 }
@@ -117,85 +96,48 @@ a{
     height: 100%;
     width: 75%;
     margin: 0 auto;
-    column-gap: 0px;
+    margin-top: 1%;
+    column-gap: 25px;
     row-gap: 50px;
 
 }
-#contenedorIconosRegiones #tituloRegion{
-    margin-top: 100%;
-    width: 100%;
+#TarjetaRegion {
+    background-color: white;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);
+}
+#TarjetaRegion p{
     text-align: center;
     font-family: 'Roboto Mono', monospace;
-    font-size: 25px;
+    margin: 0;
 }
-#iconoKanto{
-    height: 100px;
-    width: 100px;
-    background-color: yellow;
-    margin: 15px 0px 5px 50px;
-    border-radius: 50%;
+#TarjetaRegion img{
+    height: 12.5vh;
 }
-
-#iconoJhoto{
-    height: 100px;
-    width: 100px;
-    background-color: yellow;
-    margin: 15px 0px 5px 50px;
-    border-radius: 50%;
+#TarjetaRegion #tituloRegion{
+    font-size: 5vh;
+    margin-top: 1vh;
 }
-#iconoHoenn{
-    height: 100px;
-    width: 100px;
-    background-color: yellow;
-    margin: 15px 0px 5px 50px;
-    border-radius: 50%;
+#TarjetaRegion #cantidadPokes{
+    font-size: 2.5vh;
+    margin-bottom: 5%;
 }
-#iconoSinnoh{
-    height: 100px;
-    width: 100px;
-    background-color: yellow;
-    margin: 15px 0px 5px 50px;
-    border-radius: 50%;
+#TarjetaRegion #noEsta{
+    font-size: 1vh;
+    color: red;
 }
-#iconoUnova{
-    height: 100px;
-    width: 100px;
-    background-color: yellow;
-    margin: 15px 0px 5px 50px;
-    border-radius: 50%;
+#imgMapaStar{
+    margin-top: 3vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-#iconoKalos{
-    height: 100px;
-    width: 100px;
-    background-color: yellow;
-    margin: 15px 0px 5px 50px;
-    border-radius: 50%;
-}
-#iconoAlola{
-    height: 100px;
-    width: 100px;
-    background-color: yellow;
-    margin: 15px 0px 5px 50px;
-    border-radius: 50%;
-}
-#iconoGalar{
-    height: 100px;
-    width: 100px;
-    background-color: yellow;
-    margin: 15px 0px 5px 50px;
-    border-radius: 50%;
-}
-#iconoPaldea{
-    height: 100px;
-    width: 100px;
-    background-color: rgb(110, 110, 104);
-    margin: 15px 0px 5px 50px;
-    border-radius: 50%;
-}
-#iconoStar{
-    height: 100px;
-    width: 100px;
-    background-color: yellow;
-    margin: 15px 0px 5px 50px;
-    border-radius: 50%;
+#TituloMapa{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 5vh;
 }
