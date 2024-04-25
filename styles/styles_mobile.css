@@ -1,0 +1,346 @@
+body{
+    background-color: #2e99b3;
+    margin: 0;
+}
+.principal{
+    position: relative;
+}
+.secundario{
+    overflow: hidden;
+    margin: 0;
+    background-color: #82cede;
+    position: relative;
+    z-index: 1;
+}
+.principal .onda{
+    position: absolute;
+    bottom: -1rem;
+    z-index: 0;
+
+}
+.principal .espacio{
+    margin-top: 10%;
+    height: 15px;
+    z-index: 2;
+    
+}
+h1{
+    font-size: 8vh;
+    text-shadow: 4px 4px 3px rgba(0,0,0,0.5);
+    margin-bottom: 10px;
+    
+}
+.titulosPrincipal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to top, rgba(46, 153, 179, 1), rgba(46, 153, 179, 0)), linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url('../img/fondoPrincipalHD.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.divH1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+}
+
+.divH1 h1 {
+    text-align: center;
+    margin-top: 19%;
+    width: 100%;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 10vh;
+}
+.divH1 h2{
+    margin-top: 0%;
+    margin-right: 5%;
+    width: 100%;
+    font-size: 2vh;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    font-style: italic;
+}
+.divH3{
+    width: 90%;
+    margin: auto;
+}
+.divH3 h3{
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+}
+.divH3 h4{
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.menuBar{
+    position: fixed;
+    background-color: black;
+    height: 100px;
+    width: 100%;
+    font-size: x-large;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    text-transform: uppercase;
+
+}
+
+.desplazamientoMB{
+    display: block;
+    font-family: "Dosis", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-left: 0;
+}
+.imgHome{
+    margin-left: 0;
+    margin-right: 0;
+    width: 15%;
+    height: 100%;
+}
+a{
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+.texto-Violeta{
+    color:rgb(94, 2, 88);
+}
+.subrayado{
+    text-decoration: underline;
+}
+.imagenHead{
+    height: 50px;
+}
+.contenedorIconosRegiones{
+    background-color: black;
+    display: grid;
+    grid-template-columns: auto auto;
+    height: 100%;
+    width: 70%;
+    margin: 0 auto;
+    column-gap: 25px;
+    row-gap: 50px;
+    justify-content: center;
+
+}
+.TarjetaRegion {
+    background-color: rgba(255, 255, 255, 0.726);
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);
+    width: 10rem;
+}
+.TarjetaRegion p{
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+}
+.TarjetaRegion img{
+    height: 12.5vh;
+    background-color: #48b1c8;
+    border-radius: 10%;
+    margin-top: 15px;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.9);
+}
+.TarjetaRegion .tituloRegion{
+    font-size: 2rem;
+    margin-top: 1vh;
+    text-shadow: 5px 2px 25px rgb(46, 153, 179);
+}
+.TarjetaRegion .cantidadPokes{
+    font-size: 1rem;
+    margin-bottom: 5%;
+}
+.TarjetaRegion .noEsta{
+    width: auto;
+    color: red;
+}
+.imgMapas{
+    margin-top: 3vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.TituloMapa{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 5vh;
+    color: white;
+    text-align: center;
+    text-shadow: 5px 5px 5px black;
+}
+.TituloMapaStar{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 10vh;
+    color: white;
+    text-align: center;
+    text-shadow: 5px 5px 5px black;
+    margin-bottom: 0;
+}
+
+.mapasSecundarios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+.mapasSecundarios img{
+    margin-top: 0;
+    height: auto;
+}
+.mapasSecundarios > div{
+    margin: 0 10vh;
+}
+.mapasSecundarios p{
+    margin-bottom: 0;
+}
+.contenedorStarters{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    height: 100%;
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 1%;
+    column-gap: 25px;
+    row-gap: 50px;
+    margin-bottom: 5%;
+}
+.tituloUbicacionStarters{
+    margin-bottom: 2rem;
+}
+.tituloUbicacionStarters h3{
+    font-size: 1rem;
+}
+.TarjetaStarters{
+    background-color: white;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+    height: 21vh; 
+    width: 7rem; 
+    text-shadow: 1px 1px 10px rgb(255, 255, 255);
+
+}
+.TarjetaStarters img{
+    background-color: rgb(46, 153, 179);
+    border-radius: 10%;
+    margin-top: 15px;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.9);
+}
+
+.divStarters h2{
+    margin-top: 10%;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 5rem;
+    color: white;
+    text-align: center;
+    text-shadow: 5px 5px 5px black;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+.divStarters h3{
+    margin-top: 0;
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+    text-align: center;
+    text-shadow: 5px 5px 15px black;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+#eeveeluciones{
+    background-color: #2e99b3;
+
+}
+.contenedorEeveeluciones h2{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 7vh;
+    color: white;
+    text-align: center;
+    text-shadow: 5px 5px 5px black;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+.contenedorEeveeluciones h3{
+    margin-top: 0;
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+    text-align: center;
+    text-shadow: 5px 5px 15px black;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+.contenedorEeveeluciones{
+margin-top: 0;
+}
+.tituloEeveluciones{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tituloEeveluciones img{
+    margin-top: 3.5%
+
+}
+.imagenTituloEevee2{
+    transform: scaleX(-1);
+}
+.TarjetaEevee{
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+    height: 25vh; 
+    width: 17vh;
+    text-shadow: 1px 1px 10px rgb(255, 255, 255);
+}
+.TarjetaEevee p{
+    margin-bottom: 0;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.TarjetaEevee img{
+    background-color: rgb(46, 153, 179);
+    border-radius: 10%;
+    margin-top: 15px;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.9);
+}
+
+.eeveeluciones{
+    display: grid;
+    grid-template-columns: repeat(9, auto);
+    grid-template-rows: auto auto;
+    justify-content: center;
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 1%;
+    column-gap: 25px;
+    row-gap: 50px;
+    margin-bottom: 5%;
+}
