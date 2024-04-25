@@ -1,6 +1,8 @@
 body{
     background-color: #2e99b3;
     margin: 0;
+    min-width: 99vw;
+    overflow-x: hidden;
 }
 .principal{
     position: relative;
