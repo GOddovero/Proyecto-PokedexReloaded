@@ -26,7 +26,7 @@ function getColorForNumber(number) {
     } else if (number === 5) {
         return "#949993";
     } else if (number === 15) {
-        return "#b85a12";
+        return "#ff5a08";
     } else {
         return "#1185f2"; 
     }
