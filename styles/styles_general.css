@@ -1,45 +1,3 @@
-/* Media queries */
-@media only screen and (max-width: 768px) {
-    /* Adaptaciones para móvil */
-    body {
-      font-size: 16px; /* Tamaño de fuente para móvil */
-    }
-    .principal {
-      width: 90%; /* Ancho del contenedor principal */
-    }
-    .onda {
-      width: 100%; /* Ancho de la onda */
-    }
-    .espacio {
-      height: 10%; /* Altura del espacio */
-    }
-    .titulosPrincipal {
-      font-size: 24px; /* Tamaño de fuente para títulos */
-    }
-    .divH1 {
-      font-size: 18px; /* Tamaño de fuente para títulos */
-    }
-    .divH3 {
-      font-size: 14px; /* Tamaño de fuente para subtítulos */
-    }
-    .menuBar {
-      font-size: 18px; /* Tamaño de fuente para menú */
-    }
-    .contenedorIconosRegiones {
-      grid-template-columns: 1fr 1fr; /* Adaptación para móvil */
-    }
-    .TarjetaRegion {
-      width: 45%; /* Ancho de la tarjeta */
-    }
-    .TarjetaStarters {
-      width: 45%; /* Ancho de la tarjeta */
-    }
-    .TarjetaEevee {
-      width: 45%; /* Ancho de la tarjeta */
-    }
-  }
-  
-  /* ... */
 body{
     background-color: #2e99b3;
     margin: 0;
@@ -53,6 +11,9 @@ body{
     background-color: #82cede;
     position: relative;
     z-index: 1;
+}
+.bodyStarters{
+    background-color: #daf8fc;
 }
 .principal .onda{
     position: absolute;
@@ -122,7 +83,6 @@ h1{
 }
 
 .menuBar{
-    position: fixed;
     background-color: black;
     height: 100px;
     width: 100%;
@@ -276,26 +236,37 @@ a{
 }
 
 .divStarters h2{
-    margin-top: 10%;
     font-family: 'Roboto Mono', monospace;
     font-size: 7vh;
-    color: white;
+    color: #132c39;
     text-align: center;
-    text-shadow: 5px 5px 5px black;
+    text-shadow: 5px 5px 15px black;
     margin-bottom: 0;
     text-transform: uppercase;
 }
 .divStarters h3{
     margin-top: 0;
     font-family: 'Roboto Mono', monospace;
-    color: white;
+    color: #244555;
     text-align: center;
     text-shadow: 5px 5px 15px black;
     margin-bottom: 0;
     text-transform: uppercase;
+    font-size: 4vh;
+}
+.divStarters h4{
+    margin-top: 0;
+    font-family: 'Roboto Mono', monospace;
+    color: #244555;
+    text-align: center;
+    text-shadow: 5px 5px 15px black;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-size: 3vh;
 }
 #eeveeluciones{
-    background-color: #2e99b3;
+    background-color: #82cede;
+
 
 }
 .contenedorEeveeluciones h2{
@@ -378,4 +349,84 @@ margin-top: 0;
     column-gap: 25px;
     row-gap: 50px;
     margin-bottom: 5%;
+}
+.construyendo{
+    border-radius: 10%;
+}
+.eleccionStarter{
+    background-color: wheat;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.eleccionStarter p{
+    font-size: 2vh;
+    font-family: 'Roboto Mono', monospace;
+    width: 75%;
+    margin: 0 auto;
+}
+.eleccionStarter h3{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.opcion {
+    padding: 10px 20px;
+    margin: 5px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.opcion:active,
+.opcion.pressed {
+    transform: translateY(2px); /* Mueve el botón hacia abajo cuando se presiona */
+    border-color: #333; /* Cambia el borde del botón al color negro */
+    background-color: #f0f0f0; /* Cambia el fondo del botón a un tono más claro */
+    color: #000; /* Cambia el color del texto a negro */
+}
+.starterSegundaPregunta{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 1%;
+    column-gap: 25px;
+    row-gap: 50px;
+    margin-bottom: 5%;
+}
+.TarjetaStartersSeleccionado{
+    background-color: white;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+    height: 21vh; 
+    width: 20vh; 
+    text-shadow: 1px 1px 10px rgb(255, 255, 255);
+
+}
+.TarjetaStarters img{
+    background-color: rgb(46, 153, 179);
+    border-radius: 10%;
+    margin-top: 15px;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.9);
+}
+.StarterSeleccionado{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
 }

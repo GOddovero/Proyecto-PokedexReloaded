@@ -1,3 +1,5 @@
+
+
 function generateRandomImageNumbers() {
     var imageNumbers = [];
 
@@ -41,17 +43,17 @@ function generateRandomNumber(){
 function getColorForNumber(number) {
     // Reglas para determinar el color basado en el número
     if ([1, 6, 9, 12, 16, 19, 22, 25, 28].includes(number)) {
-        return "#25ad03";
+        return "#8ad479"; // Verde Pastel
     } else if ([2, 7, 10, 13, 17, 20, 23, 26, 29].includes(number)) {
-        return "#f23a11";
+        return "#f6795a"; // Rojo Pastel
     } else if (number === 4) {
-        return "#fcba03";
+        return "#fcd9a3"; // Naranja Pastel
     } else if (number === 5) {
-        return "#949993";
+        return "#c5c5c5"; // Gris Pastel
     } else if (number === 15) {
-        return "#ff5a08";
+        return "#ff896c"; // Naranja-Rojo Pastel
     } else {
-        return "#1185f2"; 
+        return "#7db1e7"; // Azul Pastel
     }
 }
 
@@ -63,7 +65,7 @@ function loadRandomImages() {
     tarjetaStarters.forEach(function(tarjeta, index) {
         var randomImageNumber = randomImageNumbers[index];
         var color = getColorForNumber(randomImageNumber);
-        var imageUrl = "img/starters/a- (" + randomImageNumber + ").gif";
+        var imageUrl = "../img/starters/a- (" + randomImageNumber + ").gif";
         tarjeta.style.backgroundColor = color;
         tarjeta.querySelector("img").src = imageUrl;
     });
@@ -148,3 +150,78 @@ window.onload = function() {
     generateRandomNumber();
 };
 
+const etapa1Buttons = document.querySelectorAll('.starterPrimeraPregunta .opcion');
+const etapa2Buttons = document.querySelectorAll('.starterSegundaPregunta .opcion');
+
+let seleccionEtapa1 = '';
+let seleccionEtapa2 = '';
+
+etapa1Buttons.forEach((button) => {
+  button.addEventListener('click', () => {
+    seleccionEtapa1 = button.id;
+    console.log(`Se seleccionó ${seleccionEtapa1}`);
+    verificarYRealizarAcciones();
+  });
+});
+
+etapa2Buttons.forEach((button) => {
+  button.addEventListener('click', () => {
+    seleccionEtapa2 = button.id;
+    console.log(`Se seleccionó ${seleccionEtapa2}`);
+    verificarYRealizarAcciones();
+  });
+});
+
+function verificarYRealizarAcciones() {
+  if (seleccionEtapa1 !== '' && seleccionEtapa2 !== '') {
+    console.log('Ambas selecciones completas');
+    realizarAccionesSegunSeleccion();
+  } else {
+    console.log('Faltan selecciones por realizar');
+  }
+}
+
+function realizarAccionesSegunSeleccion() {
+  if (seleccionEtapa1 === 'agua' && seleccionEtapa2 === 'Kanto') {
+    console.log('Imprimir Squirtle');
+    // Aquí puedes agregar código para imprimir Squirtle en la pantalla o realizar cualquier otra acción
+  } else if (seleccionEtapa1 === 'fuego' && seleccionEtapa2 === 'Kanto') {
+    console.log('Imprimir Charmander');
+    // Aquí puedes agregar código para imprimir Charmander en la pantalla o realizar cualquier otra acción
+  } else if (seleccionEtapa1 === 'planta' && seleccionEtapa2 === 'Kanto') {
+    console.log('Imprimir Bulbasaur');
+    // Aquí puedes agregar código para imprimir Bulbasaur en la pantalla o realizar cualquier otra acción
+  } else {
+    console.log('No hay acción definida para esta selección');
+  }
+}
+
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    var opcionesPrimeraPregunta = document.querySelectorAll(".starterPrimeraPregunta .opcion");
+    var opcionesSegundaPregunta = document.querySelectorAll(".starterSegundaPregunta .opcion");
+
+    opcionesPrimeraPregunta.forEach(function(opcion) {
+        opcion.addEventListener("click", function() {
+            opcionesPrimeraPregunta.forEach(function(opt) {
+                if (opt !== opcion) {
+                    opt.classList.remove("pressed");
+                }
+            });
+            this.classList.toggle("pressed");
+        });
+    });
+
+    opcionesSegundaPregunta.forEach(function(opcion) {
+        opcion.addEventListener("click", function() {
+            opcionesSegundaPregunta.forEach(function(opt) {
+                if (opt !== opcion) {
+                    opt.classList.remove("pressed");
+                }
+            });
+            this.classList.toggle("pressed");
+        });
+    });
+});

@@ -1,0 +1,12 @@
+.menuBar{
+    position: fixed;
+    background-color: black;
+    height: 100px;
+    width: 100%;
+    font-size: x-large;
+    color: white;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+    text-transform: uppercase;
+}
