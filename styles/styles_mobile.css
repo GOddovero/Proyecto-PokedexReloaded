@@ -483,7 +483,7 @@ margin-top: 0;
 
 .contenedorRutaStar {
     display: grid;
-    grid-template-columns: repeat(6, auto);
+    grid-template-columns: repeat(4, auto);
     justify-content: center;
     height: 100%;
     width: 90%;
@@ -491,7 +491,39 @@ margin-top: 0;
     row-gap: 2vw;
     margin-bottom: 10%;
 }
-.botonRuta{
+.botonRuta {
     width: 15vw;
     height: 5vh;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.75vh;
+    padding: 1vh 1vw 1.5vh 1vw;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+#RutaSinetiqueta {
+    background-color: whitesmoke;
+}
+
+#Rutanumerada {
+    background-color: whitesmoke;
+}
+
+#etiquetaAzul {
+    background-color: #5998f5;
+}
+
+#etiquetaVioleta {
+    background-color: #b85fb8;
+}
+
+#etiquetaMarron {
+    background-color: #b67227;
+}
+
+#etiquetaRoja {
+    background-color: #c9404d;
+}
+
+#etiquetaVerde {
+    background-color: #6cde86;
 }
