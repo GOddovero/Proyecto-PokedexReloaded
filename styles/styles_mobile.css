@@ -465,3 +465,17 @@ margin-top: 0;
     text-transform: uppercase;
     font-size: 2vh;
 }
+.contenedorRutaStar {
+    display: grid;
+    grid-template-columns: repeat(8, auto);
+    justify-content: center;
+    height: 100%;
+    width: 90%;
+    column-gap: 2vh;
+    row-gap: 2vw;
+    margin-bottom: 10%;
+}
+.botonRuta{
+    width: 5vw;
+    height: 5vh;
+}
