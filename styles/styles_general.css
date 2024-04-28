@@ -530,21 +530,21 @@ a {
 }
 
 #etiquetaAzul {
-    background-color: #5998f5;
+    background-color: #a9c8ff; /* Azul claro */
 }
 
 #etiquetaVioleta {
-    background-color: #b85fb8;
+    background-color: #d4a8d4; /* Violeta claro */
 }
 
 #etiquetaMarron {
-    background-color: #b67227;
+    background-color: #daaa7e; /* Marrón claro */
 }
 
 #etiquetaRoja {
-    background-color: #c9404d;
+    background-color: #e4a3a8; /* Rojo claro */
 }
 
 #etiquetaVerde {
-    background-color: #6cde86;
+    background-color: #b0efbb; /* Verde claro */
 }
