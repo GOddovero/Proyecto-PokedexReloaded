@@ -512,6 +512,7 @@ a {
     margin-bottom: 10%;
 }
 .botonRuta{
-    width: 5vw;
+    width: 7vw;
     height: 5vh;
+    font-family: 'Roboto Mono', monospace;
 }
