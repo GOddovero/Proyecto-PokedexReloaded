@@ -183,16 +183,80 @@ function verificarYRealizarAcciones() {
 
 function realizarAccionesSegunSeleccion() {
   if (seleccionEtapa1 === 'agua' && seleccionEtapa2 === 'Kanto') {
-    console.log('Imprimir Squirtle');
-    // Aquí puedes agregar código para imprimir Squirtle en la pantalla o realizar cualquier otra acción
+    document.querySelector('.StarterSeleccionado img').src = '../img/starters/a- (3).gif';
+    document.querySelector('.StarterSeleccionado .nombreInicial').textContent = "Squirtle";
   } else if (seleccionEtapa1 === 'fuego' && seleccionEtapa2 === 'Kanto') {
-    console.log('Imprimir Charmander');
-    // Aquí puedes agregar código para imprimir Charmander en la pantalla o realizar cualquier otra acción
+    document.querySelector('.StarterSeleccionado img').src = '../img/starters/a- (2).gif';
+    document.querySelector('.StarterSeleccionado .nombreInicial').textContent = "Charmander";
   } else if (seleccionEtapa1 === 'planta' && seleccionEtapa2 === 'Kanto') {
-    console.log('Imprimir Bulbasaur');
-    // Aquí puedes agregar código para imprimir Bulbasaur en la pantalla o realizar cualquier otra acción
-  } else {
-    console.log('No hay acción definida para esta selección');
+    document.querySelector('.StarterSeleccionado img').src = '../img/starters/a- (1).gif';
+    document.querySelector('.StarterSeleccionado .nombreInicial').textContent = "Bulbasaur";
+  } else if (seleccionEtapa1 === 'agua' && seleccionEtapa2 === 'Johto') {
+    document.querySelector('.StarterSeleccionado img').src = '../img/starters/a- (8).gif';
+    document.querySelector('.StarterSeleccionado .nombreInicial').textContent = "Totodile";
+  } else if (seleccionEtapa1 === 'fuego' && seleccionEtapa2 === 'Johto') {
+    document.querySelector('.StarterSeleccionado img').src = '../img/starters/a- (7).gif';
+    document.querySelector('.StarterSeleccionado .nombreInicial').textContent = "Cyndaquil";
+  } else if (seleccionEtapa1 === 'planta' && seleccionEtapa2 === 'Johto') {
+    document.querySelector('.StarterSeleccionado img').src = '../img/starters/a- (6).gif';
+    document.querySelector('.StarterSeleccionado .nombreInicial').textContent = "Chikorita";
+  } else if (seleccionEtapa1 === 'agua' && seleccionEtapa2 === 'Hoenn') {
+    document.querySelector('.StarterSeleccionado img').src = '../img/starters/a- (11).gif';
+    document.querySelector('.StarterSeleccionado .nombreInicial').textContent = "Mudkip";
+  } else if (seleccionEtapa1 === 'fuego' && seleccionEtapa2 === 'Hoenn') {
+    document.querySelector('.StarterSeleccionado img').src = '../img/starters/a- (10).gif';
+    document.querySelector('.StarterSeleccionado .nombreInicial').textContent = "Torchic";
+  } else if (seleccionEtapa1 === 'planta' && seleccionEtapa2 === 'Hoenn') {
+    document.querySelector('.StarterSeleccionado img').src = '../img/starters/a- (9).gif';
+    document.querySelector('.StarterSeleccionado .nombreInicial').textContent = "Treecko";
+  } else if (seleccionEtapa1 === 'agua' && seleccionEtapa2 === 'Sinnoh') {
+    document.querySelector('.StarterSeleccionado img').src = '../img/starters/a- (14).gif';
+    document.querySelector('.StarterSeleccionado .nombreInicial').textContent = "Piplup";
+  } else if (seleccionEtapa1 === 'fuego' && seleccionEtapa2 === 'Sinnoh') {
+    document.querySelector('.StarterSeleccionado img').src = '../img/starters/a- (13).gif';
+    document.querySelector('.StarterSeleccionado .nombreInicial').textContent = "Chimchar";
+  } else if (seleccionEtapa1 === 'planta' && seleccionEtapa2 === 'Sinnoh') {
+    document.querySelector('.StarterSeleccionado img').src = '../img/starters/a- (12).gif';
+    document.querySelector('.StarterSeleccionado .nombreInicial').textContent = "Turtwig";
+  } else if (seleccionEtapa1 === 'agua' && seleccionEtapa2 === 'Teselia') {
+    document.querySelector('.StarterSeleccionado img').src = '../img/starters/a- (18).gif';
+    document.querySelector('.StarterSeleccionado .nombreInicial').textContent = "Oshawott";
+  } else if (seleccionEtapa1 === 'fuego' && seleccionEtapa2 === 'Teselia') {
+    document.querySelector('.StarterSeleccionado img').src = '../img/starters/a- (17).gif';
+    document.querySelector('.StarterSeleccionado .nombreInicial').textContent = "Fennekin";
+  } else if (seleccionEtapa1 === 'planta' && seleccionEtapa2 === 'Teselia') {
+    document.querySelector('.StarterSeleccionado img').src = '../img/starters/a- (16).gif';
+    document.querySelector('.StarterSeleccionado .nombreInicial').textContent = "Chespin";
+  } else if (seleccionEtapa1 === 'agua' && seleccionEtapa2 === 'Kalos') {
+    document.querySelector('.StarterSeleccionado img').src = '../img/starters/a- (21).gif';
+    document.querySelector('.StarterSeleccionado .nombreInicial').textContent = "Froakie";
+  } else if (seleccionEtapa1 === 'fuego' && seleccionEtapa2 === 'Kalos') {
+    document.querySelector('.StarterSeleccionado img').src = '../img/starters/a- (20).gif';
+    document.querySelector('.StarterSeleccionado .nombreInicial').textContent = "Fennekin";
+  } else if (seleccionEtapa1 === 'planta' && seleccionEtapa2 === 'Kalos') {
+    document.querySelector('.StarterSeleccionado img').src = '../img/starters/a- (19).gif';
+    document.querySelector('.StarterSeleccionado .nombreInicial').textContent = "Chespin";
+  } else if (seleccionEtapa1 === 'agua' && seleccionEtapa2 === 'Alola') {
+    document.querySelector('.StarterSeleccionado img').src = '../img/starters/a- (24).gif';
+    document.querySelector('.StarterSeleccionado .nombreInicial').textContent = "Popplio";
+  } else if (seleccionEtapa1 === 'fuego' && seleccionEtapa2 === 'Alola') {
+    document.querySelector('.StarterSeleccionado img').src = '../img/starters/a- (23).gif';
+    document.querySelector('.StarterSeleccionado .nombreInicial').textContent = "Litten";
+  } else if (seleccionEtapa1 === 'planta' && seleccionEtapa2 === 'Alola') {
+    document.querySelector('.StarterSeleccionado img').src = '../img/starters/a- (22).gif';
+    document.querySelector('.StarterSeleccionado .nombreInicial').textContent = "Rowlet";
+  } else if (seleccionEtapa1 === 'agua' && seleccionEtapa2 === 'Star') {
+    document.querySelector('.StarterSeleccionado img').src = '../img/starters/a- (27).gif';
+    document.querySelector('.StarterSeleccionado .nombreInicial').textContent = "Ornigrim";
+  } else if (seleccionEtapa1 === 'fuego' && seleccionEtapa2 === 'Star') {
+    document.querySelector('.StarterSeleccionado img').src = '../img/starters/a- (26).gif';
+    document.querySelector('.StarterSeleccionado .nombreInicial').textContent = "Mabonny";
+  } else if (seleccionEtapa1 === 'planta' && seleccionEtapa2 === 'Star') {
+    document.querySelector('.StarterSeleccionado img').src = '../img/starters/a- (25).gif';
+    document.querySelector('.StarterSeleccionado .nombreInicial').textContent = "Iriden";
+  }else {
+    document.querySelector('.StarterSeleccionado img').src = '../img/pkmn/0.gif';
+    document.querySelector('.StarterSeleccionado .nombreInicial').textContent = "Aleatorio"
   }
 }
 
