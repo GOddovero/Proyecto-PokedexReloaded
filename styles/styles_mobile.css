@@ -465,6 +465,22 @@ margin-top: 0;
     text-transform: uppercase;
     font-size: 2vh;
 }
+.divContenidoRutas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.divContenidoRutas h2 {
+    width: 100%;
+    font-size: 2vw;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    font-style: bold;
+}
+
 .contenedorRutaStar {
     display: grid;
     grid-template-columns: repeat(6, auto);
