@@ -511,7 +511,26 @@ a {
     row-gap: 2vw;
     margin-bottom: 10%;
 }
-
+.contenedorRutaJungla {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    justify-content: center;
+    height: 100%;
+    width: 90%;
+    column-gap: 2vh;
+    row-gap: 2vw;
+    margin-bottom: 10%;
+}
+.contenedorRutaArchi {
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    justify-content: center;
+    height: 100%;
+    width: 90%;
+    column-gap: 2vh;
+    row-gap: 2vw;
+    margin-bottom: 10%;
+}
 .botonRuta {
     width: 9vw;
     height: 7vh;
@@ -547,4 +566,60 @@ a {
 
 #etiquetaVerde {
     background-color: #b0efbb; /* Verde claro */
+}
+.infoRutas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 55vw;
+    margin: 0 auto;
+    background-color: white;
+}
+
+.pestañas {
+    display: flex;
+}
+
+.pestaña {
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.75vh;
+}
+
+.pestaña.active {
+    color: black;
+    background-color: #29ee82;
+}
+
+.contenido > div {
+    display: none;
+}
+
+.contenido > div.active {
+    display: block;
+}
+.contenido p{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 10vh; 
+    text-align: center;
+}
+.divH1Ruta {
+    text-align: center;
+    text-transform: uppercase;
+    color: #132c39;
+    background-color: white; 
+    width: 50vw;
+    border-radius: 100% 100% 0px 0px; 
+    margin: 0 auto; 
+    padding: 10px; 
+}
+
+.divH1Ruta h1 {
+    margin: 0; 
+    font-family: 'Roboto Mono', monospace;
+    font-size: 10vh; 
 }
