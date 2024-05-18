@@ -1,35 +1,45 @@
-body{
-    background-color: white;
+body {
+    background-color: #2e99b3;
     margin: 0;
 }
-.principal{
+
+.principal {
     position: relative;
 }
-.secundario{
+
+.secundario {
     overflow: hidden;
     margin: 0;
     background-color: #82cede;
     position: relative;
     z-index: 1;
 }
-.principal .onda{
+
+.bodyStarters {
+    background-color: #82cede;
+}
+
+.principal .onda {
     position: absolute;
     bottom: -1rem;
     z-index: 0;
 
 }
-.principal .espacio{
+
+.principal .espacio {
     margin-top: 10%;
     height: 15px;
     z-index: 2;
-    
+
 }
-h1{
+
+h1 {
     font-size: 8vh;
-    text-shadow: 4px 4px 3px rgba(0,0,0,0.5);
+    text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.5);
     margin-bottom: 10px;
-    
+
 }
+
 .titulosPrincipal {
     display: flex;
     justify-content: center;
@@ -56,19 +66,22 @@ h1{
     font-family: 'Roboto Mono', monospace;
     font-size: 10vh;
 }
-.divH3 h3{
+
+.divH3 h3 {
     text-align: center;
     font-family: 'Roboto Mono', monospace;
     color: white;
 }
-.divH3 h4{
+
+.divH3 h4 {
     text-align: center;
     font-family: 'Roboto Mono', monospace;
     color: white;
     margin-left: 15%;
     margin-right: 15%;
 }
-.divH1 h2{
+
+.divH1 h2 {
     margin-top: 0%;
     margin-right: 5%;
     width: 100%;
@@ -79,8 +92,7 @@ h1{
     font-style: italic;
 }
 
-.menuBar{
-    position: fixed;
+.menuBar {
     background-color: black;
     height: 100px;
     width: 100%;
@@ -92,31 +104,37 @@ h1{
     text-transform: uppercase;
 }
 
-.desplazamientoMB{
+.desplazamientoMB {
     margin-left: auto;
     margin-right: 25px;
     display: block;
     font-family: "Dosis", sans-serif;
     font-weight: 600;
 }
-.imgHome{
+
+.imgHome {
     margin-left: 15px;
 }
-a{
+
+a {
     color: white;
     text-decoration: none;
     margin-left: 20px;
 }
-.texto-Violeta{
-    color:rgb(94, 2, 88);
+
+.texto-Violeta {
+    color: rgb(94, 2, 88);
 }
-.subrayado{
+
+.subrayado {
     text-decoration: underline;
 }
-.imagenHead{
+
+.imagenHead {
     height: 50px;
 }
-.contenedorIconosRegiones{
+
+.contenedorIconosRegiones {
     display: grid;
     grid-template-columns: auto auto auto auto auto;
     height: 100%;
@@ -127,6 +145,7 @@ a{
     row-gap: 50px;
 
 }
+
 .TarjetaRegion {
     background-color: rgba(255, 255, 255, 0.726);
     border-radius: 10%;
@@ -135,47 +154,57 @@ a{
     justify-content: center;
     align-items: center;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);
+    width: 12vw;
+    height: 15vw;
 }
-.TarjetaRegion p{
+
+.TarjetaRegion p {
     text-align: center;
     font-family: 'Roboto Mono', monospace;
     margin: 0;
 }
-.TarjetaRegion img{
+
+.TarjetaRegion img {
     height: 12.5vh;
     background-color: #48b1c8;
     border-radius: 10%;
     margin-top: 15px;
     box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.9);
 }
-.TarjetaRegion .tituloRegion{
+
+.TarjetaRegion .tituloRegion {
     font-size: 5vh;
     margin-top: 1vh;
     text-shadow: 5px 2px 25px rgb(46, 153, 179);
 }
-.TarjetaRegion .cantidadPokes{
+
+.TarjetaRegion .cantidadPokes {
     font-size: 2.5vh;
     margin-bottom: 5%;
 }
-.TarjetaRegion .noEsta{
+
+.TarjetaRegion .noEsta {
     width: auto;
     color: red;
 }
-.imgMapas{
+
+.imgMapas {
     margin-top: 3vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.TituloMapa{
+
+.TituloMapa {
     font-family: 'Roboto Mono', monospace;
     font-size: 5vh;
     color: white;
     text-align: center;
     text-shadow: 5px 5px 5px black;
 }
-.TituloMapaStar{
+
+.TituloMapaStar {
     font-family: 'Roboto Mono', monospace;
     font-size: 10vh;
     color: white;
@@ -186,21 +215,23 @@ a{
 
 .mapasSecundarios{
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
     margin-top: 20px;
-    text-align: center;
+    max-width: 90%;
 }
 .mapasSecundarios img{
     margin-top: 0;
-    width: 300px;
     height: auto;
 }
 .mapasSecundarios > div{
     margin: 0 10vh;
 }
-.contenedorStarters{
+.mapasSecundarios p{
+    margin-bottom: 0;
+}
+
+.contenedorStarters {
     display: grid;
     grid-template-columns: auto auto auto auto auto auto;
     height: 100%;
@@ -211,7 +242,8 @@ a{
     row-gap: 50px;
     margin-bottom: 5%;
 }
-.TarjetaStarters{
+
+.TarjetaStarters {
     background-color: white;
     border-radius: 10%;
     display: flex;
@@ -221,42 +253,58 @@ a{
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);
     font-family: 'Roboto Mono', monospace;
     text-align: center;
-    height: 21vh; 
-    width: 20vh; 
+    height: 21vh;
+    width: 20vh;
     text-shadow: 1px 1px 10px rgb(255, 255, 255);
 
 }
-.TarjetaStarters img{
+
+.TarjetaStarters img {
     background-color: rgb(46, 153, 179);
     border-radius: 10%;
     margin-top: 15px;
     box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.9);
 }
 
-.divStarters h2{
-    margin-top: 10%;
+.divStarters h2 {
     font-family: 'Roboto Mono', monospace;
     font-size: 7vh;
-    color: white;
-    text-align: center;
-    text-shadow: 5px 5px 5px black;
-    margin-bottom: 0;
-    text-transform: uppercase;
-}
-.divStarters h3{
-    margin-top: 0;
-    font-family: 'Roboto Mono', monospace;
-    color: white;
+    color: #132c39;
     text-align: center;
     text-shadow: 5px 5px 15px black;
     margin-bottom: 0;
     text-transform: uppercase;
 }
-#eeveeluciones{
-    background-color: #2e99b3;
+
+.divStarters h3 {
+    margin-top: 0;
+    font-family: 'Roboto Mono', monospace;
+    color: #244555;
+    text-align: center;
+    text-shadow: 5px 5px 15px black;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-size: 4vh;
+}
+
+.divStarters h4 {
+    margin-top: 0;
+    font-family: 'Roboto Mono', monospace;
+    color: #244555;
+    text-align: center;
+    text-shadow: 5px 5px 15px black;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-size: 3vh;
+}
+
+#eeveeluciones {
+    background-color: #82cede;
+
 
 }
-.contenedorEeveeluciones h2{
+
+.contenedorEeveeluciones h2 {
     font-family: 'Roboto Mono', monospace;
     font-size: 7vh;
     color: white;
@@ -265,7 +313,8 @@ a{
     margin-bottom: 0;
     text-transform: uppercase;
 }
-.contenedorEeveeluciones h3{
+
+.contenedorEeveeluciones h3 {
     margin-top: 0;
     font-family: 'Roboto Mono', monospace;
     color: white;
@@ -274,22 +323,27 @@ a{
     margin-bottom: 0;
     text-transform: uppercase;
 }
-.contenedorEeveeluciones{
-margin-top: 0;
+
+.contenedorEeveeluciones {
+    margin-top: 0;
 }
-.tituloEeveluciones{
+
+.tituloEeveluciones {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.tituloEeveluciones img{
-    margin-top: 3.5%
 
+.tituloEeveluciones img {
+    margin-top: 3.5%
 }
-.imagenTituloEevee2{
+
+.imagenTituloEevee2 {
     transform: scaleX(-1);
 }
-.TarjetaEevee{
+
+.TarjetaEevee {
+    max-width: 100vw;
     border-radius: 10%;
     display: flex;
     flex-direction: column;
@@ -298,27 +352,38 @@ margin-top: 0;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);
     font-family: 'Roboto Mono', monospace;
     text-align: center;
-    height: 25vh; 
-    width: 17vh;
+    height: 31vh;
+    width: 8.5vw;
     text-shadow: 1px 1px 10px rgb(255, 255, 255);
 }
-.TarjetaEevee p{
+
+.TarjetaEevee .nombreEevee {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.TarjetaEevee .piedraEevee {
+    margin-top: 1rem;
+}
+
+.TarjetaEevee p {
     margin-bottom: 0;
+    margin-top: 0;
     text-transform: uppercase;
     text-align: center;
 }
 
-.TarjetaEevee img{
+
+.TarjetaEevee img {
+    margin-top: 10%;
     background-color: rgb(46, 153, 179);
     border-radius: 10%;
-    margin-top: 15px;
     box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.9);
 }
 
-.eeveeluciones{
+.eeveeluciones {
     display: grid;
-    grid-template-columns: repeat(9, auto);
-    grid-template-rows: auto auto;
+    grid-template-columns: repeat(6, auto);
     justify-content: center;
     height: 100%;
     width: 90%;
@@ -327,4 +392,233 @@ margin-top: 0;
     column-gap: 25px;
     row-gap: 50px;
     margin-bottom: 5%;
+}
+
+.construyendo {
+    border-radius: 10%;
+}
+
+.eleccionStarter {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.eleccionStarter p {
+    font-size: 2vh;
+    font-family: 'Roboto Mono', monospace;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.eleccionStarter h3 {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.opcion {
+    padding: 10px 20px;
+    margin: 5px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.opcion:active,
+.opcion.pressed {
+    transform: translateY(2px);
+    border-color: #333;
+    background-color: #f0f0f0;
+    color: #000;
+}
+
+.starterSegundaPregunta {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 1%;
+    column-gap: 1vh;
+    row-gap: 1vw;
+    margin-bottom: 1%;
+}
+
+.TarjetaStartersSeleccionado {
+    background-color: white;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+    height: 25vh;
+    width: 10vw;
+    text-shadow: 1px 1px 10px rgb(255, 255, 255);
+
+}
+
+.TarjetaStartersSeleccionado img {
+    background-color: rgb(46, 153, 179);
+    border-radius: 10%;
+    margin-top: 1px;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.9);
+    height: 7vw;
+    width: 7vw;
+    margin-bottom: 0;
+}
+
+.StarterSeleccionado {
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #82cede;
+}
+
+.divContenidoRutas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.divContenidoRutas h2 {
+    width: 100%;
+    font-size: 2vw;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    font-style: bold;
+}
+
+.contenedorRutaStar {
+    display: grid;
+    grid-template-columns: repeat(8, auto);
+    justify-content: center;
+    height: 100%;
+    width: 90%;
+    column-gap: 2vh;
+    row-gap: 2vw;
+    margin-bottom: 10%;
+}
+.contenedorRutaJungla {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    justify-content: center;
+    height: 100%;
+    width: 90%;
+    column-gap: 2vh;
+    row-gap: 2vw;
+    margin-bottom: 10%;
+}
+.contenedorRutaArchi {
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    justify-content: center;
+    height: 100%;
+    width: 90%;
+    column-gap: 2vh;
+    row-gap: 2vw;
+    margin-bottom: 10%;
+}
+.botonRuta {
+    width: 9vw;
+    height: 7vh;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.75vh;
+    padding: 1vh 1vw 1.5vh 1vw;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+#RutaSinetiqueta {
+    background-color: whitesmoke;
+}
+
+#Rutanumerada {
+    background-color: whitesmoke;
+}
+
+#etiquetaAzul {
+    background-color: #a9c8ff; /* Azul claro */
+}
+
+#etiquetaVioleta {
+    background-color: #d4a8d4; /* Violeta claro */
+}
+
+#etiquetaMarron {
+    background-color: #daaa7e; /* Marrón claro */
+}
+
+#etiquetaRoja {
+    background-color: #e4a3a8; /* Rojo claro */
+}
+
+#etiquetaVerde {
+    background-color: #b0efbb; /* Verde claro */
+}
+.infoRutas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 55vw;
+    margin: 0 auto;
+    background-color: white;
+}
+
+.pestañas {
+    display: flex;
+}
+
+.pestaña {
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.75vh;
+}
+
+.pestaña.active {
+    color: black;
+    background-color: #29ee82;
+}
+
+.contenido > div {
+    display: none;
+}
+
+.contenido > div.active {
+    display: block;
+}
+.contenido p{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 10vh; 
+    text-align: center;
+}
+.divH1Ruta {
+    text-align: center;
+    text-transform: uppercase;
+    color: #132c39;
+    background-color: white; 
+    width: 50vw;
+    border-radius: 100% 100% 0px 0px; 
+    margin: 0 auto; 
+    padding: 10px; 
+}
+
+.divH1Ruta h1 {
+    margin: 0; 
+    font-family: 'Roboto Mono', monospace;
+    font-size: 10vh; 
 }
